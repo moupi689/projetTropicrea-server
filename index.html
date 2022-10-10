@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" >
+    <meta name="google-signin-client_id" content="YOUR_CLIENT_ID.apps.googleusercontent.com">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css">
+    <link rel="stylesheet" href="./src/files/styles.css">
+    <script src="./src/files/script.js" defer></script>
+    <script src="https://apis.google.com/js/platform.js" async defer></script>
+
+    <title>Tropicréa</title>
+</head>
+
+<body>
+<div id="formLogReg-overlay">
+    <div class="formLogReg" id="logredform">
+        <div class="sec-container">
+            <div class="form-wrapper">
+                <div class="card">
+                   <div class="card-header">
+                        <div id="forLogin" class="form-header active">Se Connecter</div>
+                        <div id="forRegister" class="form-header">S'inscrire</div>
+                   </div>
+                   <div class="card-body" id="formContainer">
+                    <form id="loginForm">
+                        <input type="text" class="form-control" placeholder="@adresse mail">
+                        <input type="password" class="form-control" placeholder="@mot de passe">
+                        <button class="formButton" id="loginbtn">Connexion</button>
+                        <button class="formButton" id="googlebtn">Se connecter avec 
+                            <img src="./src/imgs/icons/gg-icon.png" alt="">
+                        </button>
+                    </form>
+                    <form id="registerForm" class="toggleForm">
+                        <input type="text" class="form-control" placeholder="@adresse mail">
+                        <input type="password" class="form-control" placeholder="@mot de passe">
+                        <input type="password" class="form-control" placeholder="@confirmer mot de passe">
+                        <button class="formButton" id="signinbtn">Inscription</button>
+                    </form>
+                   </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+    <div id="popup-overlay">
+        <div class="popup-container" id="popup">
+            <div class="popup-image"></div>
+            <div class="popup-textbox">
+                <p class="popup-textbox_emph"> 10% OFF</p>
+                <p>Profitez de -10% sur votre première commande</p>
+                <button class="popup-btn popup-btn--login" id="tologin">Je m'inscris</button>
+                <button class="popup-btn popup-btn--close" id="close-popup">Plus tard</button>
+            </div>
+        </div>
+    </div>
+
+    <div id="wishlist-overlay">
+    <div id="wishlist-basket">
+        <div id="wishlist-container">
+            <div class="wishlist-title">Ma wishlist</div>
+            <div id="wishlist"></div>
+            <div class="wishlist-btn">
+                <div id="continue-visit">Continuer ma visite</div>
+                <div id="transfert-basket"></div>
+            </div>
+        </div>
+    </div>
+    </div>
+    <div id="basket-overlay">
+    <div id="wishlist-basket">
+        <div id="basket-container">
+            <div class="basket-title">Mon panier</div>
+            <div id="basket"></div>
+            <div class="basket-btn">
+                <div id="continue-shopping">Continuer ma visite</div>
+                <div id="validate-basket"></div>
+                <div id="cashout"> 
+                    <p>Paiement sécurisé </p> 
+                    <img src="./src/imgs/icons/paypal-icon.png" width= 60 height= 20 alt="">
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+    <header>
+        <a href="#" id="top-page"></a>
+        <div class="header__links">
+            <div class="links-leftside">
+                <div class="searchbar">
+                    <p><i class="fa-solid fa-magnifying-glass"></i></p> 
+                    <form id="searchProduct-form">
+                         <input type="search" placeholder="nom de l'article" id="searchProduct-input">
+                         <a href="#items-container"id ="scrollanchor"></a>
+                         <button type="submit" id="searchProduct-submit">Recherche</button>
+                    </form>
+                </div>
+            </div>
+            <div class="links-rightside">
+                <p class="connection-icon" id="displayForm">Connexion</p>
+                    <div class="postit-container">
+                        <i class="fa-regular fa-heart" id="toWishlist"></i>
+                        <div id="wishlist-postit"></div>
+                    </div>
+                <div class="postit-container">
+                        <i class="fa-solid fa-cart-shopping" id="toBasket"></i>
+                        <div id="basket-postit"></div>
+                </div>
+                <div class="checkbox-container">
+                    <img src="./src/imgs/icons/FR-France-Flag-icon.png" width=20 height=16 alt="">
+                    <input type="checkbox" class="lg_checkbox">
+                    <img src="./src/imgs/icons/GB-United-Kingdom-Flag-icon.png" width=20 height=20 alt="">
+                </div>
+            </div>
+        </div>
+        <h1 class="logo">TROPICREA</h1>  
+    </header>
+
+    <div class="index__background" id="form-background">
+        <div class="index__background--text">
+            <p>CREATION TEXTILE,</p>
+            <p>MADE IN TAHITI</p>  
+            <p class="index__background--animetext" id="todiscover"> Découvrir</p>
+        </div>
+    </div>
+    <section class="main" id ='main'>
+
+        <div class="sidebar" id="sidebar">
+                <div id="sidebar-toggle"><i class="fa-solid fa-arrow-right" id="togglearrow"></i></div>
+                <a href="#items-container" title="nouveautes" class="sidebar-title-news" id="nouveautes">NOUVEAUTES</a>
+                <a  title="lookbook" class="sidebar-title">WOMEN</a>
+                <a href="#items-container" title="robes" id="robes" class="sidebar-item">ROBES</a>
+                <a href="#items-container" title="pantalons" id="pantalons" class="sidebar-item">PANTALONS</a>
+                <a href="#items-container" title="shorts" id="shorts" class="sidebar-item">SHORTS</a>
+                <a href="#items-container" title="combinaisons" id="combinaisons" class="sidebar-item">COMBINAISONS</a>
+                <a href="#items-container" title="tops" id="tops" class="sidebar-item">TOPS</a>
+                <a href="#items-container" title="jupes"id="jupes" class="sidebar-item">JUPES</a>
+                <a href="#items-container" title="kimonos" id="kimonos" class="sidebar-item">KIMONOS</a>
+                <a href="#items-container" title="accessoires" id="accessoires" class="sidebar-item">ACCESSOIRES</a>
+                <a  title="lookbook" class="sidebar-title">MEN</a>
+                <a href="#items-container" title="lookbook" id="chemises" class="sidebar-item">CHEMISES</a>
+        </div>
+
+        <div class="items__container" id="items-container">
+           <div class="items__container--header" id="items-container-header">
+                <div id="items__container--header__image"></div>
+                <div id="items__container--header__content"></div>
+           </div>
+            <div id="items__container--content"></div>
+            <div class="slideshow-container" id="slideshow-container">
+                <div class="return-btn" >
+                    <img src="./src/imgs/icons/43731.png" alt="" id="return-btn">
+                </div>
+                <div class="item-slideshow" id="item-slideshow">
+                    <img id="img-slideshow">
+                </div>
+                <div class="item-description">
+                    <div class="item-header">
+                        <div id="item-name"></div>
+                        <div id="item-price"></div>
+                    </div>
+                    <div id="item-description--text"></div>
+                    <p>Tailles</p>
+                    <div class="item-size">
+                        <ul>
+                            <li>S</li>
+                            <li>M</li>
+                            <li>L</li>
+                            <li>XL</li>
+                        </ul>
+                        <div class="surMesure">
+                            <i class="fa-solid fa-ruler"></i>
+                            <p>Sur-mesure</p>
+                        </div>
+                    </div>
+                    
+                        <div id="addToBasket">Ajouter au panier</div>
+                        <div id="addToWishlist">Ajouter à la wishlist</div>
+                </div>
+            </div>   
+        </div>
+
+    </section>
+    <footer class="footer">
+            <div class="footer__left">
+                <h3>CONFECTION</h3>
+                    <ul>
+                         <li>Tissus</li>
+                       <li>Essayages</li>
+                        <li>Sur-mesure</li>
+                        <li>Retouches</li>
+                    </ul>
+            </div>
+           <div class="footer__middle">
+                <h3>INFORMATIONS</h3>
+                <ul>
+                        <li>Paiement</li>
+                    <li>Livraisons</li>
+                    <li>Retours</li>
+                </ul>
+            </div>
+            <div class="footer__right">
+                <h3>CONTACT</h3>
+                    <ul>
+                        <li><i class="fa-solid fa-phone"></i></li>
+                        <li><i class="fa-solid fa-envelope"></i></li>
+                    </ul>
+           </div>
+            <div class="responsive-footer">
+               <h3>LIENS</h3>
+                    <ul>
+                        <li><i class="fa-brands fa-facebook"></i></li>
+                        <li><i class="fa-brands fa-instagram"></i></li>
+                    </ul>
+            </div>
+    </footer>
+</body>
+</html>

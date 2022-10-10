@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css">
+    <link rel="stylesheet" href="./styles.css">
+    <script src="./script.js" defer></script>
+    <title>Espace Administration</title>
+</head>
+<body>
+    <header>
+        <div class="links-rightside">
+            <p class="connection-icon" id="displayForm">Déconnexion</p>
+        </div>
+    </header>
+    <div class="index__background" id="form-background">
+        <h1 class="logo">TROPICRE Admin</h1>  
+    </div>
+
+<section class="main">       
+    <div class="container">
+       <div class="card-header">
+            <div id="forProducts" class="card-header-btn active">Gestion des Articles</div>
+            <div id="forLinks" class="card-header-btn">Gestion des Liens</div>
+            <div id="forStats" class="card-header-btn">Stats</div>
+       </div>
+            <div id="productsCard">
+
+                <div class="productsCard-header">
+                    <div id="addProduct-btn" class="card-header-btn active"></div>
+                    <div id="findProduct-btn" class="card-header-btn">Trouver un article</div>
+                </div>
+
+                
+                <div id="findProduct-card">
+                    <form id="findProductForm">
+                        <div class="subformLayout">
+                                <i class="fa-solid fa-magnifying-glass"></i>
+                                <input type="text" class="form-control" id ="findProduct-input" placeholder="@nom du produit">
+                        </div>
+                        <button type="submit" class="formButton" id="findProduct-submit"></button>
+                    </form>
+                    <div id="foundProduct-display"></div>
+                </div>
+                
+                <div id ="addProduct-card">
+                    
+                        <form class="addProductForm" id="addProductForm" >
+                            <div class="subformLayout">
+                                <label for="category">Catégorie :</label>
+                                <select name="category" id="category">
+                                    <option value="" selected>-</option>
+                                    <option value="robes">Robes</option>
+                                    <option value="pantalons">Pantalons</option>
+                                    <option value="shorts">Shorts</option>
+                                    <option value="combinaisons">Combinaisons</option>
+                                    <option value="tops">Tops</option>
+                                    <option value="kimonos">Kimonos</option>
+                                    <option value="jupes">Jupes</option>
+                                    <option value="chemises">Chemises</option>
+                                    <option value="accessoires">Accessoires</option>
+                                </select>
+                            </div>
+                            <div class="subformLayout">
+                                <label for="title">Nom :</label>
+                                <input id="title" type="text" name="name" class="form-control" placeholder="@en minuscules">
+                            </div>
+                            <div class="subformLayout">
+                                <label for="description">Description :</label>
+                                <textarea id="description" type="text" name="description"class="" ></textarea>
+                            </div>
+                            <div class="subformLayout">
+                                <label for="price">Prix :</label>
+                                <input id="price" type="text" name="price"class="form-control" >xpf
+                            </div>
+                            <div class="subformLayout">
+                                <label for="inStock">En stock :</label>
+                                <input id="inStock" type="checkbox" name="inStock"  checked class="">
+                            </div>
+                            <div class="subformLayout">
+                                <label for="isNewItem">Nouveauté :</label>
+                                <input id="isNewItem" type="checkbox" name="isNewItem"  class="">
+                            </div>
+                            <div class="subformLayout">
+                                <label for="picture1">URL photo 1 :</label>
+                                <input id="picture1" type="text" name="picture1" class="form-control">
+                            </div>
+                            <div class="subformLayout">
+                                <label for="picture2">URL photo 2 :</label>
+                                <input id="picture2" type="text" name="picture2" class="form-control">
+                            </div>
+                            <div class="subformLayout">
+                                <label for="picture3">URL photo 3 :</label>
+                                <input id="picture3" type="text" name="picture3" class="form-control">
+                            </div>
+                            <div class="subformLayout">
+                                <label for="picture4">URL photo 4 :</label>
+                                <input id="picture4" type="text" name="picture4" class="form-control">
+                            </div>
+                            <div class="subformLayout">
+                                <label for="picture5">URL photo 5 :</label>
+                                <input id="picture5" type="text" name="picture5" class="form-control">
+                            </div>
+                            <button type="submit" class="formButton" id="addProduct-submit"></button>
+                        </form>
+                </div>
+
+                <div id ="modProduct-card">
+                    
+                    <form class="addProductForm" id="modProductForm" >
+                        <div class="subformLayout">
+                            <label for="mod-category">Catégorie :</label>
+                            <select name="mod-category" id="mod-category">
+                                <option value="" selected>-</option>
+                                <option value="robes">Robes</option>
+                                <option value="pantalons">Pantalons</option>
+                                <option value="shorts">Shorts</option>
+                                <option value="combinaisons">Combinaisons</option>
+                                <option value="tops">Tops</option>
+                                <option value="kimonos">Kimonos</option>
+                                <option value="jupes">Jupes</option>
+                                <option value="chemises">Chemises</option>
+                                <option value="accessoires">Accessoires</option>
+                            </select>
+                        </div>
+                        <div class="subformLayout">
+                            <label for="mod-title">Nom :</label>
+                            <input id="mod-title" type="text" name="name" class="form-control" placeholder="@en minuscules">
+                        </div>
+                        <div class="subformLayout">
+                            <label for="mod-description">Description :</label>
+                            <textarea id="mod-description" type="text" name="mod-description"class="" ></textarea>
+                        </div>
+                        <div class="subformLayout">
+                            <label for="mod-price">Prix :</label>
+                            <input id="mod-price" type="text" name="mod-price"class="form-control" >xpf
+                        </div>
+                        <div class="subformLayout">
+                            <label for="mod-inStock">En stock :</label>
+                            <input id="mod-inStock" type="checkbox" name="inStock"  checked class="">
+                        </div>
+                        <div class="subformLayout">
+                            <label for="mod-isNewItem">Nouveauté :</label>
+                            <input id="mod-isNewItem" type="checkbox" name="isNewItem"  class="">
+                        </div>
+                        <div class="subformLayout">
+                            <label for="mod-picture1">URL photo 1 :</label>
+                            <input id="mod-picture1" type="text" name="mod-picture1" class="form-control">
+                        </div>
+                        <div class="subformLayout">
+                            <label for="mod-picture2">URL photo 2 :</label>
+                            <input id="mod-picture2" type="text" name="mod-picture2" class="form-control">
+                        </div>
+                        <div class="subformLayout">
+                            <label for="mod-picture3">URL photo 3 :</label>
+                            <input id="mod-picture3" type="text" name="mod-picture3" class="form-control">
+                        </div>
+                        <div class="subformLayout">
+                            <label for="mod-picture4">URL photo 4 :</label>
+                            <input id="mod-picture4" type="text" name="mod-picture4" class="form-control">
+                        </div>
+                        <div class="subformLayout">
+                            <label for="mod-picture5">URL photo 5 :</label>
+                            <input id="mod-picture5" type="text" name="mod-picture5" class="form-control">
+                        </div>
+                        <button type="submit" class="formButton" id="modProduct-submit"></button>
+                    </form>
+            </div>
+            
+            </div>
+            
+            <div id="linksCard">
+                <form id="linksForm">
+                    
+                        <div class="subformLayout">
+                            <i class="fa-brands fa-facebook"></i>
+                            <input type="url" class="form-control" placeholder="@www ....">
+                        </div>
+                        <div class="subformLayout">
+                            <i class="fa-brands fa-instagram"></i>
+                            <input type="url" class="form-control" placeholder="@www ....">
+                        </div>
+                        <div class="subformLayout">
+                            <i class="fa-solid fa-envelope"></i>
+                            <input type="mail" class="form-control" placeholder="@adresse mail">
+                        </div>
+                        <div class="subformLayout">
+                            <i class="fa-solid fa-phone"></i>
+                            <input type="text" class="form-control" placeholder="@87 ....">
+                        </div>
+                        <button class="formButton" id="addLinksBtn">Envoyer</button>
+                    
+                </form>
+            </div>
+    </div>
+</section>
+    
+</body>
+</html>

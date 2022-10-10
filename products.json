@@ -1,0 +1,224 @@
+[
+    {
+    "header":"robes",
+    "logo":"./src/imgs/items-header/robes-logo.jpeg",
+    "items":
+        [
+            {
+            "id":"robe1",
+            "name":"robe 1",
+            "price":"12000",
+            "description":"description1",
+            "pics":
+                ["./src/imgs/items/robes/robe1/image1.webp",
+                "./src/imgs/items/robes/robe1/image2.webp",
+                "./src/imgs/items/robes/robe1/image3.webp",
+                "./src/imgs/items/robes/robe1/image4.webp",
+                "./src/imgs/items/robes/robe1/image5.webp"]
+            },
+                
+            {
+            "id":"robe2",
+            "name":"robe 2",
+            "price":"13500",
+            "description":"description2",
+            "pics":
+                ["./src/imgs/items/robes/robe2/image1.webp",
+                "./src/imgs/items/robes/robe2/image2.webp",
+                "./src/imgs/items/robes/robe2/image3.webp",
+                "./src/imgs/items/robes/robe2/image4.webp",
+                "./src/imgs/items/robes/robe2/image5.webp"]
+            },
+            
+            {
+            "id":"robe3"
+            ,"name":"robe 3"
+            ,"price":"14000"
+            ,"description":"description3"
+            ,"pics":
+                ["./src/imgs/items/robes/robe3/image1.webp",
+                "./src/imgs/items/robes/robe3/image2.webp",
+                "./src/imgs/items/robes/robe3/image3.webp",
+                "./src/imgs/items/robes/robe3/image4.webp",
+                "./src/imgs/items/robes/robe3/image5.webp"]
+            }
+        ]
+    },
+    
+    {
+    "header":"pantalons",
+    "logo":"./src/imgs/items-header/pants-logo.jpeg",
+    "items":
+        [
+            {
+            "id":"pant1",
+            "name":"pantalon 1",
+            "price":"10000",
+            "description":"description1",
+            "pics":
+                ["./src/imgs/items/pants/pant1/image1.webp",
+                "./src/imgs/items/pants/pant1/image2.webp",
+                "./src/imgs/items/pants/pant1/image3.webp",
+                "./src/imgs/items/pants/pant1/image4.webp"]
+            },
+            
+            {
+            "id":"pant2",
+            "name":"pantalon 2",
+            "price":"8500",
+            "description":"description2",
+            "pics":
+                ["./src/imgs/items/pants/pant2/image1.webp",
+                "./src/imgs/items/pants/pant2/image2.webp",
+                "./src/imgs/items/pants/pant2/image3.webp",
+                "./src/imgs/items/pants/pant2/image4.webp"]
+            }
+        ]
+    },
+    
+    {"header":"shorts",
+    "logo":"./src/imgs/items-header/shorts-logo.webp",
+    "items":
+        [
+            {"id":"short1",
+            "name":"short 1",
+            "price":"6000",
+            "description":"description1",
+            "pics":
+                ["./src/imgs/items/shorts/short1/image1.jpeg",
+                "./src/imgs/items/shorts/short1/image2.jpeg",
+                "./src/imgs/items/shorts/short1/image3.jpeg",
+                "./src/imgs/items/shorts/short1/image4.jpeg"]
+            },
+            
+            {"id":"short2",
+            "name":"short 2",
+            "price":"5500",
+            "description":"description2",
+            "pics":
+                ["./src/imgs/items/shorts/short2/image1.webp",
+                "./src/imgs/items/shorts/short2/image2.webp",
+                "./src/imgs/items/shorts/short2/image3.webp",
+                "./src/imgs/items/shorts/short2/image4.webp"]
+            },
+            
+            {"id":"short3",
+            "name":"short 3",
+            "price":"5000",
+            "description":"description3",
+            "pics":
+                ["./src/imgs/items/shorts/short3/image1.webp",
+                "./src/imgs/items/shorts/short3/image2.webp",
+                "./src/imgs/items/shorts/short3/image3.webp",
+                "./src/imgs/items/shorts/short3/image4.webp"]
+            }
+        ]
+    },
+    
+    {"header":"combinaisons",
+    "logo":"./src/imgs/items-header/combis-logo.webp",
+    "items":
+        [
+            {"id":"combi1",
+            "name":"combi 1",
+            "price":"10500",
+            "description":"description1",
+            "pics":
+                ["./src/imgs/items/combis/combi1/image1.webp",
+                "./src/imgs/items/combis/combi1/image2.webp",
+                "./src/imgs/items/combis/combi1/image3.webp",
+                "./src/imgs/items/combis/combi1/image4.webp"]
+            },
+            
+            {"id":"combi2",
+            "name":"combi 2",
+            "price":"9500",
+            "description":"description2",
+            "pics":
+                ["./src/imgs/items/combis/combi2/image1.webp",
+                "./src/imgs/items/combis/combi2/image2.webp",
+                "./src/imgs/items/combis/combi2/image3.webp",
+                "./src/imgs/items/combis/combi2/image4.webp"]
+            }
+        ]
+    },
+    
+    {"header":"tops",
+    "logo":"./src/imgs/items-header/tops-logo.jpeg",
+    "items":
+        [
+            {"id":"top1",
+            "name":"top 1",
+            "price":"8500",
+            "description":"description1",
+            "pics":
+                ["./src/imgs/items/tops/top1/image1.webp",
+                "./src/imgs/items/tops/top1/image2.webp",
+                "./src/imgs/items/tops/top1/image3.webp",
+                "./src/imgs/items/tops/top1/image4.webp"]
+            },
+            
+            {"id":"top2",
+            "name":"top 2",
+            "price":"9500",
+            "description":"description2",
+            "pics":
+                ["./src/imgs/items/tops/top2/image1.webp",
+                "./src/imgs/items/tops/top2/image2.webp",
+                "./src/imgs/items/tops/top2/image3.webp",
+                "./src/imgs/items/tops/top2/image4.webp"]
+            }
+        ]
+    },
+
+    {"header":"jupes",
+    "logo":"./src/imgs/items-header/jupes-logo.webp",
+    "items":
+        [
+            {"id":"jupe1",
+            "name":"jupe 1",
+            "price":"6000",
+            "description":"description1",
+            "pics":
+                ["./src/imgs/items/jupes/jupe1/image1.webp",
+                "./src/imgs/items/jupes/jupe1/image2.webp",
+                "./src/imgs/items/jupes/jupe1/image3.webp",
+                "./src/imgs/items/jupes/jupe1/image4.webp"]
+            },
+            
+            {"id":"jupe2",
+            "name":"jupe 2",
+            "price":"5500",
+            "description":"description2"
+            ,"pics":
+                ["./src/imgs/items/jupes/jupe2/image1.webp",
+                "./src/imgs/items/jupes/jupe2/image2.webp",
+                "./src/imgs/items/jupes/jupe2/image3.webp",
+                "./src/imgs/items/jupes/jupe2/image4.webp"]
+            },
+            
+            {"id":"jupe3",
+            "name":"jupe 3",
+            "price":"5000",
+            "description":"description3",
+            "pics":
+                ["./src/imgs/items/jupes/jupe3/image1.webp",
+                "./src/imgs/items/jupes/jupe3/image2.webp",
+                "./src/imgs/items/jupes/jupe3/image3.webp",
+                "./src/imgs/items/jupes/jupe3/image4.webp"]
+            },
+            
+            {"id":"jupe4",
+            "name":"jupe 4",
+            "price":"7000",
+            "description":"description4",
+            "pics":
+                ["./src/imgs/items/jupes/jupe4/image1.webp",
+                "./src/imgs/items/jupes/jupe4/image2.webp",
+                "./src/imgs/items/jupes/jupe4/image3.webp",
+                "./src/imgs/items/jupes/jupe4/image4.webp"]
+            }
+        ]
+    },
+    
+    {"header":"kimonos","logo":"./src/imgs/items-header/kimonos-logo.webp","items":[{"id":"kimono1","name":"kimono 1","price":"14000","description":"description1","pics":["./src/imgs/items/kimonos/kimono1/image1.webp","./src/imgs/items/kimonos/kimono1/image2.webp","./src/imgs/items/kimonos/kimono1/image3.webp","./src/imgs/items/kimonos/kimono1/image4.webp"]},{"id":"kimono2","name":"kimono 2","price":"15500","description":"description2","pics":["./src/imgs/items/kimonos/kimono2/image1.webp","./src/imgs/items/kimonos/kimono2/image2.webp","./src/imgs/items/kimonos/kimono2/image3.webp","./src/imgs/items/kimonos/kimono2/image4.webp"]},{"id":"kimono3","name":"kimono 3","price":"15000","description":"description3","pics":["./src/imgs/items/kimonos/kimono3/image1.webp","./src/imgs/items/kimonos/kimono3/image2.webp","./src/imgs/items/kimonos/kimono3/image3.webp","./src/imgs/items/kimonos/kimono3/image4.webp"]}]},{"header":"accessoires","logo":"./src/imgs/items-header/access-logo.jpg","items":[{"id":"access1","name":"accessoire 1","price":"8500","description":"description1","pics":["./src/imgs/items/accessoires/access1/image1.webp","./src/imgs/items/accessoires/access1/image2.webp","./src/imgs/items/accessoires/access1/image3.webp","./src/imgs/items/accessoires/access1/image4.webp"]},{"id":"access2","name":"accessoire 2","price":"9500","description":"description2","pics":["./src/imgs/items/accessoires/access2/image1.webp","./src/imgs/items/accessoires/access2/image2.webp","./src/imgs/items/accessoires/access2/image3.webp","./src/imgs/items/accessoires/access2/image4.webp"]}]},{"header":"chemises","logo":"./src/imgs/items-header/chemises-logo.webp","items":[{"id":"chemise1","name":"chemise 1","price":"5000","description":"description1","pics":["./src/imgs/items/chemises/chemise1/image1.webp","./src/imgs/items/chemises/chemise1/image2.webp","./src/imgs/items/chemises/chemise1/image3.webp","./src/imgs/items/chemises/chemise1/image4.webp"]},{"id":"chemise2","name":"chemise 2","price":"5500","description":"description2","pics":["./src/imgs/items/chemises/chemise2/image1.webp","./src/imgs/items/chemises/chemise2/image2.webp","./src/imgs/items/chemises/chemise2/image3.webp","./src/imgs/items/chemises/chemise2/image4.webp"]},{"id":"chemise3","name":"chemise 3","price":"6000","description":"description3","pics":["./src/imgs/items/chemises/chemise3/image1.webp","./src/imgs/items/chemises/chemise3/image2.webp","./src/imgs/items/chemises/chemise3/image3.webp","./src/imgs/items/chemises/chemise3/image4.webp"]}]},{"header":"nouveautes","logo":"./src/imgs/items-header/news-logo.webp","items":[{"id":"robe1","name":"robe 1","price":"12000","description":"description1","pics":["./src/imgs/items/robes/robe1/image1.webp","./src/imgs/items/robes/robe1/image2.webp","./src/imgs/items/robes/robe1/image3.webp","./src/imgs/items/robes/robe1/image4.webp","./src/imgs/items/robes/robe1/image5.webp"]},{"id":"chemise2","name":"chemise 2","price":"5500","description":"description2","pics":["./src/imgs/items/chemises/chemise2/image1.webp","./src/imgs/items/chemises/chemise2/image2.webp","./src/imgs/items/chemises/chemise2/image3.webp","./src/imgs/items/chemises/chemise2/image4.webp"]},{"id":"top1","name":"top 1","price":"8500","description":"description1","pics":["./src/imgs/items/tops/top1/image1.webp","./src/imgs/items/tops/top1/image2.webp","./src/imgs/items/tops/top1/image3.webp","./src/imgs/items/tops/top1/image4.webp"]},{"id":"kimono3","name":"kimono 3","price":"15000","description":"description3","pics":["./src/imgs/items/kimonos/kimono3/image1.webp","./src/imgs/items/kimonos/kimono3/image2.webp","./src/imgs/items/kimonos/kimono3/image3.webp","./src/imgs/items/kimonos/kimono3/image4.webp"]}]}]
